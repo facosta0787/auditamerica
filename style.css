@@ -1,0 +1,124 @@
+body{
+  font-family: Helvetica, serif;
+  color: #52575c;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Agency-FB';
+  src: url('./Agency_FB.ttf');
+}
+
+.hero{
+  width: 100%;
+  height: 50vh;
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./hero-logo.jpg');*/
+  background: linear-gradient(to right,rgba(89,89,89,1.0),rgba(100,100,100,1.0),rgba(130,130,130,0.8));
+  background-size: cover;
+}
+
+.title-wrapper{
+  width: 100%;
+  height: 50vh;
+}
+
+.title{
+  font-family: 'Agency-FB', Helvetica, serif;
+  font-weight: normal;
+  color: white;
+  font-size: 120px;
+  /*text-decoration: underline;*/
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.title span{
+  position: relative;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+.title span::after{
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 5px;
+  width: 97%;
+  background: white;
+  background: linear-gradient(left, transparent 0%,white 50%,transparent 100%);
+}
+
+.title .title-b::after{
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: white;
+  background: linear-gradient(left, transparent 0%,white 50%,transparent 100%);
+}
+
+.subtitle{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+}
+
+.info{
+  display: flex;
+  justify-content: space-around;
+}
+
+.article{
+  margin-top: 20px;
+  /*border: 1px solid black;*/
+  width: 500px;
+  height: calc(50vh - 50px);
+}
+
+.article h3{
+  margin-left: 20px;
+  font-weight: normal;
+  font-size: 25px;
+  color: #52575c;
+}
+
+.services li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.contact-item-list li{
+  list-style: none;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.contact-item-list li a, a:visited{
+  text-decoration: none;
+  color: #52575c;
+}
+
+.socials{
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #52575c;
+  margin-right: 15px;
+}
